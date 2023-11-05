@@ -210,7 +210,6 @@ function Update() {
 /*Delete Employee*/
 function Delete(id) {
     if (confirm('Are you sure to delete this employee data?')) {
-        console.log("confirmed to delete");
         $.ajax({
             url: '/employee/Delete?id=' + id,
             type: 'post',
@@ -220,9 +219,8 @@ function Delete(id) {
                     alert('Unable to delete the data.');
                 }
                 else {
-                    GetEmployees();
-                    console.log("something ");
-                    alert("Employee deleted successfully!aaaaa");
+                    GetEmployees
+                    alert(response);
                 }
             },
             error: function () {
