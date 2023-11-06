@@ -36,7 +36,8 @@ namespace EmployeeManagement_Front.Services
 
         public async Task<List<Employee>> GetAllEmployeesAsync()
         {
-            List<Employee> result =await _httpClient.GetFromJsonAsync<List<Employee>>(baseUri+"Employee");
+            string uri = baseUri + "Employee";
+            List<Employee> result =await _httpClient.GetFromJsonAsync<List<Employee>>(uri);
             return result;
         }
 
