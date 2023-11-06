@@ -62,7 +62,7 @@ namespace EmployeeManagement_Front.Controllers
         public async Task<JsonResult> Delete(int id)
         {
             employeeService.DeleteEmployee(id);
-            return Json("Employee Deleted Successfully");
+            return Json("Employee Deleted Successfully!");
         }
     }
 }

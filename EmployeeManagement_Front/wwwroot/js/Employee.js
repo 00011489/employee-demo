@@ -219,7 +219,7 @@ function Delete(id) {
                 }
                 else {
                     GetEmployees();
-                    alert('Employee Deleted Successfully!');
+                    alert('Employee Deleted Successfully!AAA');
                 }
             },
             error: function () {
