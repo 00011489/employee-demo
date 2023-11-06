@@ -30,7 +30,7 @@ namespace EmployeeManagement_Front.Controllers
         {
             if(ModelState.IsValid)
             {
-                employeeService.AddEmployee(createDto);
+                await employeeService.AddEmployee(createDto);
                 return Json("Employee details saved.");
             }
             else
